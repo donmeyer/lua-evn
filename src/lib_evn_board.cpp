@@ -30,6 +30,9 @@
 #include "evn_drivebase.h"
 
 #include "evn_distance_sensor.h"
+#include "evn_colour_sensor.h"
+#include "evn_compass_sensor.h"
+#include "evn_imu_sensor.h"
 
 #include "evn_display.h"
 #include "evn_matrixled.h"
@@ -359,6 +362,9 @@ int luaopen_evn_board( lua_State *L )
     init_evn_drivebase( L );
 
     init_evn_distance_sensor( L );
+    init_evn_colour_sensor( L );
+    init_evn_compass_sensor( L );
+    init_evn_imu_sensor( L );
 
     init_evn_display( L );
     init_evn_matrixled( L );

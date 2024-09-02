@@ -1,6 +1,6 @@
 # Lua EVN Manual
 
-Version 1.0
+Version 1.1
 
 
 Copyright (c) 2024, Donald T. Meyer
@@ -21,11 +21,11 @@ A) Lua is a higher-level language, and may be more accessible than C/C++.
 
 B) It implements a serial port shell that allows interacting with the running Lua program in multiple ways:
 
-2.  Displaying the value of variables.
-3.    Changing the value of variables.
-4.    Invoking Lua functions "on the fly".
-5.    Modifying and updating the software without the Arduino build/download steps.
-6.    Downloading programs is possible "over the air" if a BT similar wireless connection is made to one of the EVNAlpha serial ports.
+1.  Displaying the value of variables.
+2.  Changing the value of variables.
+3.  Invoking Lua functions "on the fly".
+4.  Modifying and updating the software without the Arduino build/download steps.
+5.  Downloading programs is possible "over the air" if a BT similar wireless connection is made to one of the EVNAlpha serial ports.
 
 C) Last but not least, the Lua EVN system allows modifying and updating code *while the program is running*.
 
@@ -42,7 +42,7 @@ The `Lua Examples` folder contains several useful example scripts.
 -------------------------------------------------------------
 <br>
 
-# State of the Project <br>(14-Aug-2024)
+# State of the Project <br>(2-Sep-2024)
 
 Currently, only some of the EVN Alpha hardware objects are supported:
 * Motor
@@ -51,6 +51,9 @@ Currently, only some of the EVN Alpha hardware objects are supported:
 * Drivebase
 
 * DistanceSensor
+* CompassSensor
+* IMUSensor  (UNTESTED)
+* ColourSensor
 
 * Display
 * Matrix LED
